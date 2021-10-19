@@ -14,17 +14,16 @@ public class RemoveDuplicates {
         int[] resultArray;
 
         for (int i = 0; i < array.length; i++) {
-            int uniqueElement = array[i];
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[j] == uniqueElement) {
-                    array[j] = plug;
-                }
-            }
-        }
-
-        for (int i = 0; i < array.length; i++) {
             if (array[i] == plug) {
-                plugs++;
+                continue;
+            } else {
+                int uniqueElement = array[i];
+                for (int j = i + 1; j < array.length; j++) {
+                    if (array[j] == uniqueElement) {
+                        array[j] = plug;
+                        plugs++;
+                    }
+                }
             }
         }
 
