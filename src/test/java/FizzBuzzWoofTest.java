@@ -32,6 +32,9 @@ public class FizzBuzzWoofTest {
         String[] expectedResult5 = {};
         String[] expectedResult6 = {};
 
+        String[] vas = new String[] {"a", "B"};
+        vas.toString();
+
         Assert.assertArrayEquals(expectedResult1, FizzBuzzWoof.fizzBuzzWoof(testNumber1));
         Assert.assertArrayEquals(expectedResult2, FizzBuzzWoof.fizzBuzzWoof(testNumber2));
         Assert.assertArrayEquals(expectedResult3, FizzBuzzWoof.fizzBuzzWoof(testNumber3));

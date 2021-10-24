@@ -20,7 +20,7 @@ public class AscendingSequence {
 
         for (int i = 0; i < numberOfSteps; i++) {
             result[i] = startNumber;
-            startNumber += 5;
+            startNumber += step;
         }
 
         return result;
