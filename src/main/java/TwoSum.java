@@ -5,7 +5,7 @@ public class TwoSum {
 
     public static int[] twoSum(int[] input, int targetNumber) {
 
-        for (int i = 0; i < input.length; i++) {
+        for (int i = 0; i < input.length - 1; i++) {
             for (int j = i + 1; j < input.length; j++) {
                 if (input[i] + input[j] == targetNumber) {
                     return new int[]{i, j};

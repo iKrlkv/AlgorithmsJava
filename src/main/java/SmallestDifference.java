@@ -21,7 +21,7 @@ public class SmallestDifference {
         int firstNumber = Integer.MAX_VALUE;
         int secondNumber = 0;
 
-        for (int i = 0; i < input.length; i++) {
+        for (int i = 0; i < input.length - 1; i++) {
             for (int j = i + 1; j < input.length; j++) {
                 if (Math.abs(input[i] - input[j]) < Math.abs(firstNumber - secondNumber)) {
                     firstNumber = input[i];
