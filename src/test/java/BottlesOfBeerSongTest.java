@@ -36,9 +36,9 @@ public class BottlesOfBeerSongTest {
 
         List<WebElement> songText = driver.findElements(By.xpath("//div[@id='main']//p"));
         for (WebElement item : songText) {
-            sb.append(item.getText()).append("\n\n");
+            sb.append(item.getText());
         }
-        sb.deleteCharAt(sb.length() - 1);
+        //sb.deleteCharAt(sb.length() - 1);
 
         Assert.assertEquals(BottlesOfBeerSongWithSB.getSongText().toString(), sb.toString());
     }

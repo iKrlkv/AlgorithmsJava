@@ -13,11 +13,11 @@ public class BottlesOfBeerSongWithSB {
     public static StringBuilder printSecondString(StringBuilder sb, int count) {
 
         if (count > 1) {
-            sb.append(String.format("Take one down and pass it around, %d bottles of beer on the wall.\n\n", count));
+            sb.append(String.format("Take one down and pass it around, %d bottles of beer on the wall.", count));
         } else if (count == 1) {
-            sb.append(String.format("Take one down and pass it around, %d bottle of beer on the wall.\n\n", count));
+            sb.append(String.format("Take one down and pass it around, %d bottle of beer on the wall.", count));
         } else {
-            sb.append("Take one down and pass it around, no more bottles of beer on the wall.\n\n");
+            sb.append("Take one down and pass it around, no more bottles of beer on the wall.");
         }
 
         return sb;
@@ -25,7 +25,7 @@ public class BottlesOfBeerSongWithSB {
 
     public static StringBuilder printLastString(StringBuilder sb) {
         sb.append("No more bottles of beer on the wall, no more bottles of beer.\n");
-        sb.append("Go to the store and buy some more, 99 bottles of beer on the wall.\n");
+        sb.append("Go to the store and buy some more, 99 bottles of beer on the wall.");
 
         return sb;
     }
