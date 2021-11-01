@@ -1,6 +1,7 @@
-import java.util.Arrays;
-
 public class GetCountOfQOR {
+
+    //Написать метод, который принимает на вход строку
+    // и печатает все буквы “q”, “o” и “r” из этой строки:
 
     public static String getCountOfQOR(String str) {
 
