@@ -38,7 +38,6 @@ public class BottlesOfBeerSongTest {
         for (WebElement item : songText) {
             sb.append(item.getText());
         }
-        //sb.deleteCharAt(sb.length() - 1);
 
         Assert.assertEquals(BottlesOfBeerSongWithSB.getSongText().toString(), sb.toString());
     }
