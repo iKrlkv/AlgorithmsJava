@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class ReturnNumberOfVowels {
 
     //Написать метод, который посчитает количество гласных букв в строке.
@@ -26,4 +28,21 @@ public class ReturnNumberOfVowels {
         }
         return cnt;
     }
+
+
+    //Второй вариант
+    public static int returnNumberOfVowels2(String str) {
+
+        String reference = "aeiou";
+        int cnt = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (reference.contains(Character.toString(str.toLowerCase().charAt(i)))) {
+                cnt++;
+            }
+        }
+
+        return cnt;
+    }
+
 }

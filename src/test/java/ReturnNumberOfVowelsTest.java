@@ -17,5 +17,8 @@ public class ReturnNumberOfVowelsTest {
 
         Assert.assertEquals(expectedResult1, ReturnNumberOfVowels.returnNumberOfVowels(testData1));
         Assert.assertEquals(expectedResult2, ReturnNumberOfVowels.returnNumberOfVowels(testData2));
+
+        Assert.assertEquals(expectedResult1, ReturnNumberOfVowels.returnNumberOfVowels2(testData1));
+        Assert.assertEquals(expectedResult2, ReturnNumberOfVowels.returnNumberOfVowels2(testData2));
     }
 }

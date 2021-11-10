@@ -12,7 +12,8 @@ public class ArrayToList {
 
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
-                result.add(Character.getNumericValue(str.charAt(i)));
+                result.add(str.charAt(i) - 48);
+                //result.add(Character.getNumericValue(str.charAt(i)));
             }
         }
         return result;
