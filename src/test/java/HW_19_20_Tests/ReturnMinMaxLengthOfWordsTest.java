@@ -1,5 +1,6 @@
-package HW_19_20;
+package HW_19_20_Tests;
 
+import HW_19_20.ReturnMinMaxLengthOfWords;
 import org.junit.Assert;
 import org.junit.Test;
 
