@@ -2,6 +2,10 @@ package HW_19_20;
 
 public class ReturnCommonPrefix {
 
+    //Write a function to find the longest common prefix
+    // string amongst an array of strings. If there is no common prefix,
+    // return an empty string "".
+
     public static String returnCommonPrefix(String[] str) {
 
         StringBuilder sb = new StringBuilder();
