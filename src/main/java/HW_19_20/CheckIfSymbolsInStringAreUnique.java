@@ -2,6 +2,8 @@ package HW_19_20;
 
 public class CheckIfSymbolsInStringAreUnique {
 
+    //Написать метод, который проверяет строку на уникальность символов в ней.
+
     public static boolean checkIfSymbolsInStringAreUnique(String str) {
 
         StringBuilder sb = new StringBuilder(str.charAt(0) + "");
