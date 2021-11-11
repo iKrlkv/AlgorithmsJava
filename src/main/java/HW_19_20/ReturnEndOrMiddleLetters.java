@@ -16,10 +16,10 @@ public class ReturnEndOrMiddleLetters {
             return str;
         } else if (str.length() <= 5) {
             for (int i = 0; i < str.length(); i++) {
-                sb.append(str.substring(1, str.length() - 1));
+                sb.append(str, 1, str.length() - 1);
             }
         } else {
-            sb.append(str.substring(str.length() - 3)).append(str.substring(0, 3));
+            sb.append(str.substring(str.length() - 3)).append(str, 0, 3);
         }
 
         return sb.toString();
