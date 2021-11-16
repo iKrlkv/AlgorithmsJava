@@ -1,5 +1,7 @@
 package HW_19_20;
 
+import java.util.Arrays;
+
 public class ReturnCommonPrefix {
 
     //Write a function to find the longest common prefix
@@ -10,7 +12,9 @@ public class ReturnCommonPrefix {
 
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < str[0].length(); i++) {
+        int minLength = Arrays.stream(str).min((str1, str2) -> str1.length() > str2.length() ? 1: -1).get().length();
+
+        for (int i = 0; i < minLength; i++) {
             for (int j = 1; j < str.length; j ++) {
                 if (str[0].charAt(i) != str[j].charAt(i)) {
                     return sb.toString();
